@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.row {
+  padding-bottom: 6rem;
+}
+.popup-section {
+  min-height: 100vh;
+  width: 100%;
+}
+.container {
+  max-width: 1150px;
+  background: #ffffffff;
+  margin: auto;
+  min-height: 100vh;
+}
+.row {
+  text-align: center;
+}
+.heading {
+  font-size: 6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #bcbad0;
+}
+.title {
+  padding-top: 5rem;
+}
+.heading.new {
+  color: #be0017;
+}
+.title p {
+  font-size: 2.2rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.img-container {
+  /* width: 100%; */
+  height: 860px;
+  margin: 20px;
+  cursor: pointer;
+  position: relative;
+}
+.img-container span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./1-05.jpg");
+  background-size: cover;
+}
+.img-container:nth-child(2) span {
+  background-image: url("./1-05.jpg");
+}
+.img-container:nth-child(3) span {
+  background-image: url("./1-05.jpg");
+}
+.img-container span:nth-child(1) {
+  clip-path: polygon(0 0, 45% 0, 45% 100%, 0 99%);
+}
+.img-container span:nth-child(2) {
+  clip-path: polygon(51% 0, 45% 0, 45% 99%, 51% 100%);
+}
+.img-container span:nth-child(3) {
+  clip-path: polygon(100% 0, 45% 0, 45% 100%, 100% 100%);
+}
+.img-container span:nth-child(1) {
+  top: -45px;
+  left: -10px;
+}
+.btn {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 22px 40px;
+  background: #be0017;
+  text-transform: uppercase;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+.btn.btn-primary {
+  background: #e3e5f2;
+  padding: 22px 67px;
+}
+.btn.btn-primary a {
+  color: #000000;
+}
